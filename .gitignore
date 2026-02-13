@@ -7,4 +7,8 @@ src-tauri/gen/
 *.log
 .vscode/
 .idea/
-
+# User/runtime data (if it ever appears near the repo)
+runtime_sessions/
+instances/
+downloads/
+cache/
