@@ -14,29 +14,25 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # macOS Intel
           - os: macos-latest
             target: x86_64-apple-darwin
             label: macos-x64
 
-          # macOS Apple Silicon
           - os: macos-latest
             target: aarch64-apple-darwin
             label: macos-arm64
 
-          # Windows
           - os: windows-latest
             target: x86_64-pc-windows-msvc
             label: windows
 
-          # Linux
           - os: ubuntu-latest
             target: x86_64-unknown-linux-gnu
             label: linux
 
     runs-on: ${{ matrix.os }}
 
-        steps:
+    steps:
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -65,19 +61,6 @@ jobs:
             librsvg2-dev \
             patchelf \
             libssl-dev
-
-      - name: Install frontend deps
-        run: npm ci
-
-      - name: Build (Tauri)
-        run: npm run tauri:build -- --target ${{ matrix.target }}
-
-      - name: Upload Release Assets
-        uses: softprops/action-gh-release@v2
-        with:
-          files: |
-            src-tauri/target/${{ matrix.target }}/release/bundle/**/*
-
 
       - name: Install frontend deps
         run: npm ci
