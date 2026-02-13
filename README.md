@@ -1,6 +1,6 @@
-# OpenJar Studios
+# OpenJar Launcher
 
-**OpenJar Studios** is a **good-looking, Mac-first Minecraft launcher / “Creator Studio”** built with **Tauri (Rust)** + **React (Vite + TypeScript)**.  
+**OpenJar Launcher** is a **good-looking, Mac-first Minecraft launcher / “Creator Studio”** built with **Tauri (Rust)** + **React (Vite + TypeScript)**.  
 It’s designed to feel clean and modern while still being powerful: manage instances, import modpacks, browse Modrinth/CurseForge, install & update mods with lockfiles, edit configs with a real UI, and launch safely — even running lots of copies at once via isolated runtime sessions.
 
 ---
@@ -119,7 +119,7 @@ A full config editing experience inside the app:
 
 ## How Multi-Launch Works (Isolated Runtime Sessions)
 
-OpenJar Studios can launch multiple runs of the same instance safely by creating an **isolated runtime session directory** per launch.  
+OpenJar Launcher can launch multiple runs of the same instance safely by creating an **isolated runtime session directory** per launch.  
 When the game closes, the runtime session is **deleted automatically**.
 
 This avoids the classic problem of **two Minecraft clients writing to the same folder** (which can corrupt saves and configs).
@@ -137,7 +137,7 @@ This avoids the classic problem of **two Minecraft clients writing to the same f
 
 ## Platform support & testing
 
-OpenJar Studios is **built and tested primarily on macOS** and is optimized to run smoothly on Mac.
+OpenJar Launcher is **built and tested primarily on macOS** and is optimized to run smoothly on Mac.
 
 Because it’s built on **Tauri + Rust**, it **should also work on Windows** (and likely Linux), and the codebase includes cross-platform handling for common OS actions (macOS `open`, Windows `explorer`, Linux `xdg-open`).
 

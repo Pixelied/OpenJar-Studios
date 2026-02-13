@@ -1,8 +1,8 @@
 [package]
 name = "modpack-manager"
 version = "0.0.1"
-description = "OpenJar Studios"
-authors = ["Adrien"]
+description = "OpenJar Launcher"
+authors = ["OpenJar Launcher Contributors"]
 edition = "2021"
 rust-version = "1.70"
 

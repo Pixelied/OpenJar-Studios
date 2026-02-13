@@ -6,7 +6,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "OpenJar Studios",
+    "productName": "OpenJar Launcher",
     "version": "0.0.1"
   },
   "tauri": {
@@ -22,7 +22,7 @@
     },
     "windows": [
       {
-        "title": "OpenJar Studios",
+        "title": "OpenJar Launcher",
         "width": 1100,
         "height": 720,
         "resizable": true
@@ -34,7 +34,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.openjar.studios",
+      "identifier": "io.github.pixelied.openjarlauncher",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
