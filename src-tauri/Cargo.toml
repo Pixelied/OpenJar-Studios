@@ -1,0 +1,28 @@
+[package]
+name = "modpack-manager"
+version = "0.0.1"
+description = "OpenJar Studios"
+authors = ["Adrien"]
+edition = "2021"
+rust-version = "1.70"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.6", features = [ "shell-open", "dialog-open", "dialog-save" ] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "native-tls"] }
+open_launcher = { path = "vendor/open_launcher" }
+base64 = "0.22"
+sha2 = "0.10"
+url = "2.5"
+uuid = { version = "1.10", features = ["v4"] }
+keyring = "3.6"
+zip = { version = "0.6.6", default-features = false, features = ["deflate"] }
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+tokio = { version = "1.49", features = ["macros", "time"] }
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
