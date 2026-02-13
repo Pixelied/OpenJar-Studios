@@ -18,28 +18,6 @@ It’s designed to feel clean and modern while still being powerful: manage inst
 - **Native launching** + Microsoft account login
 - **Multi-launch support** using **isolated runtime sessions** (run many copies safely)
 
----
-
-## Platform support & testing
-
-OpenJar Studios is **built and tested primarily on macOS** and is optimized to run smoothly on Mac.
-
-Because it’s built on **Tauri + Rust**, it **should also work on Windows** (and likely Linux), and the codebase includes cross-platform handling for common OS actions (macOS `open`, Windows `explorer`, Linux `xdg-open`).
-
-- **macOS:** Actively tested / primary target
-- **Windows:** Expected to work, but not as heavily tested yet
-- **Linux:** Likely workable, but currently unverified
-
-If you try **Windows/Linux** and run into any problems, please **open a GitHub Issue** and include:
-- your OS + version (and whether it’s Intel/AMD or ARM)
-- what you were doing + steps to reproduce + the issue
-- any error messages
-- relevant logs (and screenshots if helpful)
-
-That helps me verify cross-platform behavior and fix compatibility issues faster.
-
----
-
 ## Features (Implemented)
 
 ### Instance Management
@@ -152,6 +130,26 @@ This avoids the classic problem of **two Minecraft clients writing to the same f
 - **React + TypeScript** frontend (**Vite**)
 - Multi-provider content flows (**Modrinth + CurseForge**)
 - Clean separation between UI, commands, and instance filesystem operations
+
+---
+
+## Platform support & testing
+
+OpenJar Studios is **built and tested primarily on macOS** and is optimized to run smoothly on Mac.
+
+Because it’s built on **Tauri + Rust**, it **should also work on Windows** (and likely Linux), and the codebase includes cross-platform handling for common OS actions (macOS `open`, Windows `explorer`, Linux `xdg-open`).
+
+- **macOS:** Actively tested / primary target
+- **Windows:** Expected to work, but not as heavily tested yet
+- **Linux:** Likely workable, but currently unverified
+
+If you try **Windows/Linux** and run into any problems, please **open a GitHub Issue** and include:
+- your OS + version (and whether it’s Intel/AMD or ARM)
+- what you were doing + steps to reproduce + the issue
+- any error messages
+- relevant logs (and screenshots if helpful)
+
+That helps me verify cross-platform behavior and fix compatibility issues faster.
 
 ---
 
