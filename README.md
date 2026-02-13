@@ -140,8 +140,36 @@ This avoids the classic problem of **two Minecraft clients writing to the same f
 ### Requirements
 - Node.js **18+** recommended
 - Rust toolchain (**stable**)
-- Tauri prerequisites for macOS
+- Tauri prerequisites for your OS
 
 ### Install
 ```bash
 npm install
+````
+
+### Run (dev)
+Frontend only (Vite):
+```bash
+npm run dev
+```
+
+Full desktop app (Tauri + Vite):
+```bash
+npm run tauri:dev
+```
+
+### Build
+Frontend build:
+```bash
+npm run build
+```
+
+Tauri desktop build:
+```bash
+npm run tauri:build
+```
+
+### Preview (frontend build)
+```bash
+npm run preview
+```
