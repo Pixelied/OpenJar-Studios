@@ -1,4 +1,3 @@
-````md
 # OpenJar Launcher
 
 **OpenJar Launcher** is a **good-looking, Mac-first Minecraft launcher / “Creator Studio”** built with **Tauri (Rust)** + **React (Vite + TypeScript)**.
