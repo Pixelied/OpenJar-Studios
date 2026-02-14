@@ -38,8 +38,11 @@ Drop images into `docs/screenshots/` and embed them like this:
 
 <p align="center">
   <img src="docs/screenshots/instances.png" width="32%" alt="Instances" />
+  <img src="docs/screenshots/instance.png" width="32%" alt="Instance" />
   <img src="docs/screenshots/discover.png" width="32%" alt="Discover" />
-  <img src="docs/screenshots/config.png" width="32%" alt="Config Editor" />
+  <img src="docs/screenshots/config editor.png" width="32%" alt="Config Editor" />
+  <img src="docs/screenshots/mod updates.png" width="32%" alt="Mod Update Availability" />
+  <img src="docs/screenshots/settings.png" width="32%" alt="Settings" />
 </p>
 
 ---
