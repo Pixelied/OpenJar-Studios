@@ -34,15 +34,36 @@ It’s designed to feel clean and modern while still being powerful: manage inst
 
 ## Screenshots
 
-Drop images into `docs/screenshots/` and embed them like this:
+Screenshots live in `docs/screenshots/` (click any image to view full size).
 
 <p align="center">
-  <img src="docs/screenshots/instances.png" width="32%" alt="Instances" />
-  <img src="docs/screenshots/instance content.png" width="32%" alt="Instance" />
-  <img src="docs/screenshots/discover content.png" width="32%" alt="Discover" />
-  <img src="docs/screenshots/config editor.png" width="32%" alt="Config Editor" />
-  <img src="docs/screenshots/mod updates.png" width="32%" alt="Mod Update Availability" />
-  <img src="docs/screenshots/settings.png" width="32%" alt="Settings" />
+  <a href="docs/screenshots/instances.png">
+    <img src="docs/screenshots/instances.png" width="92%" alt="Instances" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="docs/screenshots/instance content.png">
+    <img src="docs/screenshots/instance content.png" width="49%" alt="Instance Content" />
+  </a>
+  <a href="docs/screenshots/discover content.png">
+    <img src="docs/screenshots/discover content.png" width="49%" alt="Discover Content" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="docs/screenshots/config editor.png">
+    <img src="docs/screenshots/config editor.png" width="49%" alt="Config Editor" />
+  </a>
+  <a href="docs/screenshots/mod updates.png">
+    <img src="docs/screenshots/mod updates.png" width="49%" alt="Mod Update Availability" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="docs/screenshots/settings.png">
+    <img src="docs/screenshots/settings.png" width="49%" alt="Settings" />
+  </a>
 </p>
 
 ---
