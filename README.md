@@ -329,13 +329,17 @@ This area is wired but still marked as “in progress.”
 
 ## Where your data lives
 
-OpenJar stores everything in your OS app data directory (Tauri app data). Per instance you’ll typically see:
+OpenJar keeps your data **on your computer** in your OS app data directory (Tauri app data). Each instance is just a normal folder structure you can open in Finder.
+
+Per instance you’ll typically see:
 
 - `mods/`, `resourcepacks/`, `shaderpacks/`, `config/`, `saves/`
-- `lock.json` (installed content lockfile)
-- `snapshots/` (content snapshots)
-- `world_backups/` (world save backups)
-- `runtime/` and `runtime_sessions/` (runtime prep folders for launching)
+- `lock.json` (tracks what OpenJar installed so updates/rollback are reliable)
+- `snapshots/` (snapshots of installed content for rollback)
+- `world_backups/` (zipped backups of your worlds, based on your backup settings)
+- `runtime/` and `runtime_sessions/` (temporary launch/runtime folders, especially for multi-launch)
+
+Privacy note: OpenJar doesn’t upload your instances, worlds, or configs anywhere — it works directly with the files on your machine. Anything network-related is only for things you explicitly do (like browsing/installing from Modrinth/CurseForge or signing in to Microsoft for launching).
 
 ---
 
